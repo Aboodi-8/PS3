@@ -1,72 +1,64 @@
 <!DOCTYPE html>
-<html dir="rtl">
+<html lang="en">
 <head>
-    <title>موقع عبده للتهكير</title>
     <meta charset="UTF-8">
-    <!-- Link to Google Fonts for better Arabic rendering -->
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdo's Hacking Website</title>
     <style>
-        body { 
-            font-family: 'Amiri', Arial, sans-serif; 
-            text-align: right; /* Ensure text aligns to the right */
-            background-color: #1a1a1a; 
-            color: #fff; 
-            margin: 0; 
-            padding: 0; 
-        }
-        h1 { 
-            margin-top: 20px; 
-            font-size: 28px; 
-            color: #00ffcc; 
-            text-shadow: 2px 2px 5px rgba(0, 255, 204, 0.5); 
-        }
-        .container { 
-            width: 90%; 
-            max-width: 600px; 
-            margin: auto; 
-            padding: 20px; 
-            background: #222; 
-            border-radius: 10px; 
-            box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); 
-        }
-        ul { 
-            list-style: none; 
-            padding: 0; 
-            text-align: right; /* Ensure list items align properly for RTL text */
-        }
-        li { 
-            margin: 10px 0; 
-            padding: 12px; 
-            background: #333; 
-            border-radius: 8px; 
-            transition: background 0.3s, transform 0.2s; 
-        }
-        li:hover { 
-            background: #444; 
-            transform: scale(1.05); 
-        }
-        a { 
-            color: #00ffcc; 
-            text-decoration: none; 
-            font-weight: bold; 
-            display: block; 
-            transition: color 0.3s; 
-        }
-        a:hover { 
-            text-decoration: underline; 
-            color: #ffcc00; 
-        }
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #1a1a1a; color: #fff; margin: 0; padding: 0; direction: ltr; }
+        h1 { margin-top: 20px; font-size: 28px; color: #00ffcc; text-shadow: 2px 2px 5px rgba(0, 255, 204, 0.5); }
+        .container { width: 90%; max-width: 600px; margin: auto; padding: 20px; background: #222; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); }
+        ul { list-style: none; padding: 0; }
+        li { margin: 10px 0; padding: 12px; background: #333; border-radius: 8px; transition: background 0.3s, transform 0.2s; }
+        li:hover { background: #444; transform: scale(1.05); }
+        a { color: #00ffcc; text-decoration: none; font-weight: bold; display: block; transition: color 0.3s; }
+        a:hover { text-decoration: underline; color: #ffcc00; }
+        #languageButton { background-color: #00ffcc; color: #1a1a1a; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px; }
+        #languageButton:hover { background-color: #ffcc00; }
     </style>
 </head>
 <body>
-    <h1>موقع عبده للتهكير</h1>
+    <h1 id="title">Abdo's Hacking Website</h1>
     <div class="container">
-        <p>ابدأ بتحميل الملفات بالتسلسل:</p>
+        <p id="instruction">Start by downloading the files in sequence:</p>
         <ul>
-            <li><a href="https://store.brewology.com/get/homebrew.php?id=320&fid=2349">تحميل المتجر</a></li>
-            <li><a href="https://aboodi-8.github.io/PS3/Files.zip" download>تحميل الملفات المهمة للمتجر</a></li>
-            <li><a href="https://store.brewology.com/get/homebrew.php?id=24&fid=2171">تحميل برنامج MultiMAN</a></li>
+            <li><a href="https://store.brewology.com/get/homebrew.php?id=320&fid=2349" id="storeLink">Download the Store</a></li>
+            <li><a href="https://aboodi-8.github.io/PS3/Files.zip" download id="filesLink">Download the important files for the store</a></li>
+            <li><a href="https://store.brewology.com/get/homebrew.php?id=24&fid=2171" id="multiManLink">Download the MultiMAN program</a></li>
         </ul>
     </div>
+    <button id="languageButton" onclick="switchLanguage()">تبديل إلى العربية</button>
+
+    <script>
+        let isEnglish = true;
+
+        function switchLanguage() {
+            isEnglish = !isEnglish;
+
+            if (isEnglish) {
+                // Switch to English
+                document.documentElement.lang = 'en';
+                document.body.style.direction = 'ltr';
+
+                document.getElementById('title').innerText = 'Abdo\'s Hacking Website';
+                document.getElementById('instruction').innerText = 'Start by downloading the files in sequence:';
+                document.getElementById('storeLink').innerText = 'Download the Store';
+                document.getElementById('filesLink').innerText = 'Download the important files for the store';
+                document.getElementById('multiManLink').innerText = 'Download the MultiMAN program';
+                document.getElementById('languageButton').innerText = 'Switch to Arabic';
+            } else {
+                // Switch to Arabic
+                document.documentElement.lang = 'ar';
+                document.body.style.direction = 'rtl';
+
+                document.getElementById('title').innerText = 'موقع عبده للتهكير';
+                document.getElementById('instruction').innerText = 'ابدأ بتحميل الملفات بالتسلسل:';
+                document.getElementById('storeLink').innerText = 'تحميل المتجر';
+                document.getElementById('filesLink').innerText = 'تحميل الملفات المهمة للمتجر';
+                document.getElementById('multiManLink').innerText = 'تحميل برنامج MultiMAN';
+                document.getElementById('languageButton').innerText = 'تبديل إلى الإنجليزية';
+            }
+        }
+    </script>
 </body>
 </html>
