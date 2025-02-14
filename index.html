@@ -1,34 +1,57 @@
 <!DOCTYPE html>
+<!-- GET OUT!!!!!!!! -->
 <html>
 <head>
- 
     <title>Abdo's Hacking Website</title>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #1a1a1a; color: #fff; margin: 0; padding: 0; }
+        body { font-family: Tahoma, Arial, sans-serif; text-align: center; background-color: #1a1a1a; color: #fff; margin: 0; padding: 0; }
         h1 { margin-top: 20px; font-size: 28px; color: #00ffcc; text-shadow: 2px 2px 5px rgba(0, 255, 204, 0.5); }
-        .container { width: 90%; max-width: 600px; margin: auto; padding: 20px; background: #222; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); }
+        .container-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
+        .container { width: 90%; max-width: 400px; padding: 20px; background: #222; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); }
         ul { list-style: none; padding: 0; }
         li { margin: 10px 0; padding: 12px; background: #333; border-radius: 8px; transition: background 0.3s, transform 0.2s; }
         li:hover { background: #444; transform: scale(1.05); }
         a { color: #00ffcc; text-decoration: none; font-weight: bold; display: block; transition: color 0.3s; }
         a:hover { text-decoration: underline; color: #ffcc00; }
+        @media (min-width: 800px) {  /* Side-by-side layout for large screens */
+            .container { width: 45%; }
+        }
     </style>
 </head>
 <body>
     <h1>Abdo's Hacking Website</h1>
-    <div class="container">
-        <p>Start by downloading the files in sequence:</p>
-        <ul>
-            <li><a href="https://store.brewology.com/get/homebrew.php?id=320&fid=2349">PKGI Store Downloade</a></li>
-            <li><a href="https://aboodi-8.github.io/PS3/Files.zip" download>Important files for the PKGI Store Downloade</a></li>
-            <li><a href="https://store.brewology.com/get/homebrew.php?id=24&fid=2171">MultiMAN Downloade</a></li>
-        </ul>
-     <p></p>
-     <p>Useful but not needed:</p>
-        <ul>
-            <li><a href="https://www.mediafire.com/file/s1jc256rnhsauol/ZukoStore_v4.5_HEN.pkg/file">Zuko Store Downloade</a></li>
-        </ul>
+
+    <div class="container-wrapper">
+        <!-- First container -->
+        <div class="container">
+            <p>Start by downloading the files in sequence:</p>
+            <ul>
+                <li><a href="https://store.brewology.com/get/homebrew.php?id=320&fid=2349">PKGI Store Download</a></li>
+                <li><a href="https://aboodi-8.github.io/PS3/Files.zip" download>Important files for the PKGI Store</a></li>
+                <li><a href="https://store.brewology.com/get/homebrew.php?id=24&fid=2171">MultiMAN Download</a></li>
+            </ul>
+        </div>
+
+        <!-- Second container -->
+        <div class="container">
+            <p>Useful but not required:</p>
+            <ul>
+                <li><a href="https://www.mediafire.com/file/s1jc256rnhsauol/ZukoStore_v4.5_HEN.pkg/file">Zuko Store Download</a></li>
+                <li><a href="https://ps3.brewology.com/downloads/">Brewology Webseite</a></li>
+                <li><a href="https://ps3xploit.me/">Ps3xploit Webseite</a></li>
+            </ul>
+        </div>
+
+        <!-- Third container -->
+        <div class="container">
+            <p>Additional Tools:</p>
+            <ul>
+                <li><a href="https://ps3xploit.me/hen/installer/index.html">HEN Installer/Enabler</a></li>
+                <li><a href="https://ps3addict.github.io/alternate/">HEN Installer (Alternate)</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
