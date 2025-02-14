@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!-- GET OUT!!!!!!!! -->
 <html>
 <head>
     <title>PS3 HEN Tools</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
-        
         body { 
             font-family: Tahoma, Arial, sans-serif; 
             text-align: center; 
@@ -14,52 +12,49 @@
             color: #fff; 
             margin: 0; 
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
 
         h1 { 
-        margin-top: 20px;
+            margin-top: 20px;
             font-size: 28px;
             color: #ff0000;
             text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5); 
         }
-        
-        .container-wrapper { 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            padding: 20px;
+
+        .container-wrapper {
+            width: 100%;
+            text-align: center;
         }
-        
-        .container { 
-            width: 90%;
-            max-width: 400px;
-            padding: 20px;
+
+        .container {
+            width: 30%; /* Adjust width to fit three containers */
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
             background: #222;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); 
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
         }
-        
+
         ul { 
             list-style: none;
             padding: 0; 
         }
-        
-        li { margin: 10px 0;
+
+        li { 
+            margin: 10px 0;
             padding: 19px;
             background: #333;
             border-radius: 8px;
             transition: background 0.3s, transform 0.2s; 
-           }
-        
+        }
+
         li:hover { 
             background: #444;
             transform: scale(1.05); 
         }
-        
+
         a { 
             color: #ff0000;
             text-decoration: none;
@@ -67,23 +62,24 @@
             display: block;
             transition: color 0.3s; 
         }
-        
+
         a:hover { 
             text-decoration: underline;
             color: #ffcc00; 
         }
-        
-        @media (min-width: 800px) { 
+
+        @media (max-width: 800px) { 
             .container { 
-            width: 45%; 
+                width: 90%; /* Stack on smaller screens */
+                display: block;
+                margin: 10px auto;
             }
-            
         }
+
         ::selection {
             background: #b30000;
             color: #ffffff; 
         }
-        
     </style>
 </head>
 <body>
@@ -105,8 +101,8 @@
             <p>Useful but not required:</p>
             <ul>
                 <li><a href="https://www.mediafire.com/file/s1jc256rnhsauol/ZukoStore_v4.5_HEN.pkg/file">Zuko Store Download</a></li>
-                <li><a href="https://ps3.brewology.com/downloads/">Brewology Webseite</a></li>
-                <li><a href="https://ps3xploit.me/">Ps3xploit Webseite</a></li>
+                <li><a href="https://ps3.brewology.com/downloads/">Brewology Website</a></li>
+                <li><a href="https://ps3xploit.me/">Ps3xploit Website</a></li>
             </ul>
         </div>
 
@@ -120,43 +116,7 @@
         </div>
     </div>
 
-
-    <div class="container-wrapper">
-        <!-- First container -->
-        <div class="container">
-            <p>Start by downloading the files in sequence:</p>
-            <ul>
-                <li><a href="https://store.brewology.com/get/homebrew.php?id=320&fid=2349">PKGI Store Download</a></li>
-                <li><a href="https://aboodi-8.github.io/PS3/Files.zip" download>Important files for the PKGI Store</a></li>
-                <li><a href="https://store.brewology.com/get/homebrew.php?id=24&fid=2171">MultiMAN Download</a></li>
-            </ul>
-        </div>
-
-        <!-- Second container -->
-        <div class="container">
-            <p>Useful but not required:</p>
-            <ul>
-                <li><a href="https://www.mediafire.com/file/s1jc256rnhsauol/ZukoStore_v4.5_HEN.pkg/file">Zuko Store Download</a></li>
-                <li><a href="https://ps3.brewology.com/downloads/">Brewology Webseite</a></li>
-                <li><a href="https://ps3xploit.me/">Ps3xploit Webseite</a></li>
-            </ul>
-        </div>
-
-        <!-- Third container -->
-        <div class="container">
-            <p>Additional Tools:</p>
-            <ul>
-                <li><a href="https://ps3xploit.me/hen/installer/index.html">HEN Installer/Enabler</a></li>
-                <li><a href="https://ps3addict.github.io/alternate/">HEN Installer (Alternate)</a></li>
-            </ul>
-        </div>
-    </div>
-
-
-
-
-
-<p style="
+    <p style="
           font-size: 13px;
           opacity: 0.5;
           position: fixed;
@@ -165,6 +125,10 @@
           width: 100%;
           color: white;
           text-align: center;
-          ">I do not own or claim to own any of the content mentioned. All rights belong to their respective owners. This is for informational/educational purposes only. I do not endorse, support, or encourage piracy in any form. If you choose to proceed, you do so at your own risk.</p>
+          ">
+        I do not own or claim to own any of the content mentioned. All rights belong to their respective owners. 
+        This is for informational/educational purposes only. I do not endorse, support, or encourage piracy in any form. 
+        If you choose to proceed, you do so at your own risk.
+    </p>
 </body>
 </html>
